@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1811 490" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-1862.45,-3911.91)">
+        <g id="RECEIVE--GIVE2" serif:id="RECEIVE/ GIVE2" transform="matrix(1,0,0,1,421.467,1943.71)">
+            <rect x="1440.98" y="1968.2" width="1810.34" height="489.186" style="fill:none;"/>
+            <g id="PICTURE2" transform="matrix(1.13723,0,0,1.15834,-2598.91,-454.345)">
+                <g id="OBJETOS-ENTREGADOS-OBTENIDOS" serif:id="OBJETOS ENTREGADOS OBTENIDOS">
+                    <g id="PICTURE21" serif:id="PICTURE2">
+                        <g transform="matrix(0.856047,0,0,0.856047,3539.05,1806.98)">
+                            <circle cx="238.468" cy="597.541" r="191.731" style="fill:rgb(235,235,235);stroke:black;stroke-width:15.6px;"/>
+                        </g>
+                        <g transform="matrix(0.856047,0,0,0.856047,3529.93,1816.12)">
+                            <circle cx="238.468" cy="597.541" r="191.731" style="fill:rgb(235,235,235);stroke:black;stroke-width:15.6px;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

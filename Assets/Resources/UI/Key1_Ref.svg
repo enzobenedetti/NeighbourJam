@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 218 223" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-6290.72,-2669.77)">
+        <g id="KEY1" transform="matrix(0.324795,0,0,0.369613,6274.07,2037.79)">
+            <rect x="51.256" y="1709.85" width="668.701" height="600.984" style="fill:none;"/>
+            <g id="KEY" transform="matrix(3.07358,0.158508,-0.180381,2.70088,-3440.79,-130.761)">
+                <g transform="matrix(0.809525,0,0,0.894737,208.529,50.5363)">
+                    <path d="M1403.35,712.641L1403.35,781.415C1403.35,800.394 1386.32,815.802 1365.34,815.802L1289.33,815.802C1268.35,815.802 1251.32,800.394 1251.32,781.415L1251.32,712.641C1251.32,693.662 1268.35,678.254 1289.33,678.254L1365.34,678.254C1386.32,678.254 1403.35,693.662 1403.35,712.641Z" style="fill:rgb(235,235,235);stroke:black;stroke-width:17.96px;"/>
+                </g>
+                <g transform="matrix(0.809525,0,0,0.894737,198.529,60.5363)">
+                    <path d="M1403.35,712.641L1403.35,781.415C1403.35,800.394 1386.32,815.802 1365.34,815.802L1289.33,815.802C1268.35,815.802 1251.32,800.394 1251.32,781.415L1251.32,712.641C1251.32,693.662 1268.35,678.254 1289.33,678.254L1365.34,678.254C1386.32,678.254 1403.35,693.662 1403.35,712.641Z" style="fill:rgb(228,152,127);stroke:black;stroke-width:17.96px;"/>
+                </g>
+                <g transform="matrix(0.999911,0.0133354,-0.0133354,0.999911,-335.355,422.23)">
+                    <g transform="matrix(83.3333,0,0,83.3333,1642.06,314.394)">
+                    </g>
+                    <text x="1586.97px" y="314.394px" style="font-family:'CooperBlack', 'Cooper Black';font-size:83.333px;">F</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

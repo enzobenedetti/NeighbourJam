@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 218 223" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-6290.72,-4799.77)">
+        <g id="KEY2A_REF" transform="matrix(0.324795,0,0,0.369613,6274.07,4167.79)">
+            <rect x="51.256" y="1709.85" width="668.701" height="600.984" style="fill:none;"/>
+            <g id="KEY" transform="matrix(4.13437,0.323274,-0.367882,3.63304,-4640.66,-1030.3)">
+                <g transform="matrix(0.829959,0,0,0.917322,182.959,32.1108)">
+                    <path d="M1403.35,712.641L1403.35,781.415C1403.35,800.394 1386.32,815.802 1365.34,815.802L1289.33,815.802C1268.35,815.802 1251.32,800.394 1251.32,781.415L1251.32,712.641C1251.32,693.662 1268.35,678.254 1289.33,678.254L1365.34,678.254C1386.32,678.254 1403.35,693.662 1403.35,712.641Z" style="fill:rgb(235,235,235);stroke:black;stroke-width:13px;"/>
+                </g>
+                <g transform="matrix(0.847324,1.12344e-17,0,0.936515,151.23,26.4538)">
+                    <path d="M1403.35,712.641L1403.35,781.415C1403.35,800.394 1386.32,815.802 1365.34,815.802L1289.33,815.802C1268.35,815.802 1251.32,800.394 1251.32,781.415L1251.32,712.641C1251.32,693.662 1268.35,678.254 1289.33,678.254L1365.34,678.254C1386.32,678.254 1403.35,693.662 1403.35,712.641Z" style="fill:rgb(235,235,213);stroke:black;stroke-width:12.73px;"/>
+                </g>
+                <g transform="matrix(0.741203,-0.029014,0.029014,0.741203,59.9268,552.285)">
+                    <g transform="matrix(125,0,0,125,1673.34,343.56)">
+                    </g>
+                    <text x="1586.97px" y="343.56px" style="font-family:'CooperBlack', 'Cooper Black';font-size:125px;">E</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
