@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
+  m_Name: 4
+  m_EditorClassIdentifier: 
+  dialogueText: "Both of our races have a reputation for being a bloodthirsty people
+    who don\u2019t care to \"talk\" over their problems, but you seem nice. You and
+    me are going to be friends, I just know it!"
+  choices:
+  - choiceText: Continue
+    nextDialogue: {fileID: 11400000, guid: 295095686b3f3664fb85697e62755aed, type: 2}
+    consequenceID: 0
+  - choiceText: Close the door
+    nextDialogue: {fileID: 11400000, guid: ef5c6c1849d39f84aaeaebeb40a2e072, type: 2}
+    consequenceID: 0
+  - choiceText: '"Talk" (WARNING: Are you sure?)'
+    nextDialogue: {fileID: 11400000, guid: fd09d971d566f1d4fb314472a9a48d30, type: 2}
+    consequenceID: 1
