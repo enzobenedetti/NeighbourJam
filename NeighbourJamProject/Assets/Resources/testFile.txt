@@ -1,7 +1,0 @@
-﻿Roswald "Gracias por contartar con nuestro humilde negocio a través de nuestro anuncio en Magialista." list(items -f long), playSong("Intro Song" -v 1)
-
-setScene("Classroom" -s 5.5)
-
-World "Hello, \"Quote Here\" right back at you!"
-
-narrator "And so ended"
