@@ -8,6 +8,8 @@ public class Dialogue : ScriptableObject
     public string dialogueText;
 
     public List<DialogueChoice> choices;
+
+    public ParticleSystem burn;
 }
 
 [System.Serializable]

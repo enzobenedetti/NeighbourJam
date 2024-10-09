@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Death
   m_EditorClassIdentifier: 
   dialogueText: WAAAAAAAAAAAAAAAAAAAAAH!
-  choices: []
+  choices:
+  - choiceText: End
+    nextDialogue: {fileID: 0}
+    consequenceID: 0
+  burn: {fileID: 0}

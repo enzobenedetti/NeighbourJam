@@ -24,3 +24,4 @@ MonoBehaviour:
   - choiceText: '"Talk" (WARNING: Are you sure?)'
     nextDialogue: {fileID: 11400000, guid: fd09d971d566f1d4fb314472a9a48d30, type: 2}
     consequenceID: 1
+  burn: {fileID: 0}

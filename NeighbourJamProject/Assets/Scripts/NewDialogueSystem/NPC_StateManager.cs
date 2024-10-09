@@ -6,6 +6,8 @@ public class NPC_StateManager : MonoBehaviour
 {
     public static NPC_StateManager instance;
 
+    public GameObject Inga, Alma;
+
     // Dictionary to store the state of NPCs (alive, dead, etc.)
     public Dictionary<string, bool> npcStates = new Dictionary<string, bool>();
 
@@ -19,6 +21,14 @@ public class NPC_StateManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        if (GetNPCState("Inga") == false && PlayerInputs.instance.dialogueManager == null)
+        {
+            Destroy(Inga);
         }
     }
 

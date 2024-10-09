@@ -15,7 +15,7 @@ public class TypewrittingEffect : MonoBehaviour
 
     private void Start()
     {
-        dialogueText = GetComponent<TextMeshProUGUI>();
+        //dialogueText = GetComponent<TextMeshProUGUI>();
         instance = this;
     }
 

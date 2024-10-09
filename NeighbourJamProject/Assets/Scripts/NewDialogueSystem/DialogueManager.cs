@@ -13,8 +13,8 @@ public class DialogueManager : MonoBehaviour
     private Dialogue currentDialogue;
     public TypewrittingEffect typewrittingEffect;
 
-    public string speakerName;
-    public TextMeshProUGUI speakerText;
+    //public string speakerName;
+    //public TextMeshProUGUI speakerText;
 
     public Dialogue firstDialogue;  // Assign the first dialogue ScriptableObject in the Inspector
 
@@ -25,6 +25,8 @@ public class DialogueManager : MonoBehaviour
     public Dialogue IngaDead_Dialogue;
     public Dialogue AlmaDead_Dialogue;
 
+    public Transform burnSpawnPoint;
+
     private void Awake()
     {
         instance = this;
@@ -32,18 +34,18 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
-        if (NPC_StateManager.instance.GetNPCState("Inga") == false)
-        {
-            StartDialogue(IngaDead_Dialogue);
-        }
-        else if (NPC_StateManager.instance.GetNPCState("Alma") == false)
-        {
-            StartDialogue(AlmaDead_Dialogue);
-        }
-        else
-        {
+        //if (NPC_StateManager.instance.GetNPCState("Inga") == false)
+        //{
+        //    StartDialogue(IngaDead_Dialogue);
+        //}
+        //else if (NPC_StateManager.instance.GetNPCState("Alma") == false)
+        //{
+        //    StartDialogue(AlmaDead_Dialogue);
+        //}
+        //else
+        //{
             StartDialogue(firstDialogue);  // Automatically start the first dialogue
-        }
+        //}
         
     }
 
@@ -54,7 +56,7 @@ public class DialogueManager : MonoBehaviour
             dialogueHistory.Push(currentDialogue);
         }
 
-        typewrittingEffect.dialogueText.text = " ";
+        //typewrittingEffect.dialogueText.text = " ";
         
         currentDialogue = newDialogue;
         
@@ -63,7 +65,8 @@ public class DialogueManager : MonoBehaviour
 
     void DisplayDialogue()
     {
-        speakerText.text = speakerName;
+        //speakerText.text = speakerName;
+
         typewrittingEffect.writer = currentDialogue.dialogueText;
         typewrittingEffect.StartCoroutine("TypeWriterText");
 
@@ -133,6 +136,7 @@ public class DialogueManager : MonoBehaviour
                 break;
             case 1:
                 Debug.Log("Inga killed");
+                Instantiate(currentDialogue.burn, burnSpawnPoint.position, burnSpawnPoint.rotation, burnSpawnPoint);
                 NPC_StateManager.instance.SetNPCState("Inga", false);
                 break;
         }

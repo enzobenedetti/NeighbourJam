@@ -3,13 +3,18 @@ using UnityEngine.UIElements;
 
 public class CircularInteractable : MonoBehaviour
 {
+    //Player stuff
     public Transform player;           // Reference to the player
     public float interactionRadius = 5f; // Radius of the circular area
     public float near1_Radius = 8f; // Radius of the circular area
 
+    //Sprite stuff
     public GameObject gossip;
     public GameObject near1;
     public GameObject near2_interact;
+
+    //Interaction stuff
+    public GameObject mainCanvas;
 
     void Update()
     {
@@ -48,5 +53,10 @@ public class CircularInteractable : MonoBehaviour
     {
         Debug.Log("Interaction performed!");
         // Add your interaction logic here
+
+
+        PlayerInputs.instance.dialogueManager = GetComponent<DialogueManager>();
+        mainCanvas.SetActive(true);
+        PlayerInputs.instance.Dialogue();
     }
 }
