@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
+  m_Name: InitialDialog_IngaDead
+  m_EditorClassIdentifier: 
+  dialogueText: Shit...this is Roswald's apartment...I'm going to get kicked out
+    for sure...
+  choices:
+  - choiceText: Knock the door.
+    nextDialogue: {fileID: 11400000, guid: 6fe7211cdd482ad4a97390edf75be877, type: 2}
+    consequenceID: 0
+  - choiceText: Try to hear what's happening inside
+    nextDialogue: {fileID: 11400000, guid: c4b39e6659a78314c9c68ed101b12fae, type: 2}
+    consequenceID: 0
+  burn: {fileID: 0}

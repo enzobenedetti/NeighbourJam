@@ -30,6 +30,11 @@ public class NPC_StateManager : MonoBehaviour
         {
             Destroy(Inga);
         }
+
+        if (GetNPCState("Alma") == false && PlayerInputs.instance.dialogueManager == null)
+        {
+            Destroy(Inga);
+        }
     }
 
     // Method to set the state of an NPC (e.g., alive or dead)

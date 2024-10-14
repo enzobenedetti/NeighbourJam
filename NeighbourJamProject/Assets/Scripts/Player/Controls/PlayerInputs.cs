@@ -42,6 +42,6 @@ public class PlayerInputs : MonoBehaviour
     
     public void Dialogue()
     {
-        DialogueManager.instance.StartDialogue();
+        dialogueManager.StartDialogue();
     }
 }

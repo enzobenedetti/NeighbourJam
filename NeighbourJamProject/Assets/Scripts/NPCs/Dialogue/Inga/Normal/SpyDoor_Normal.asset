@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
-  m_Name: KnockDoor_AfterIngaDead
+  m_Name: SpyDoor_Normal
   m_EditorClassIdentifier: 
-  dialogueText: Don't bother, I'm not going to open the door.
+  dialogueText: 
   choices: []
+  burn: {fileID: 0}

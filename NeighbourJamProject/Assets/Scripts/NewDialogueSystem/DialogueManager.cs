@@ -5,16 +5,13 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager instance;
+    public DialogueManager instance;
 
     public GameObject mainCanvas;
     public GameObject[] choiceButtons; // UI buttons for choices
 
-    private Dialogue currentDialogue;
+    [SerializeField] private Dialogue currentDialogue;
     public TypewrittingEffect typewrittingEffect;
-
-    //public string speakerName;
-    //public TextMeshProUGUI speakerText;
 
     public Dialogue firstDialogue;  // Assign the first dialogue ScriptableObject in the Inspector
 
@@ -34,18 +31,18 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
-        //if (NPC_StateManager.instance.GetNPCState("Inga") == false)
-        //{
-        //    StartDialogue(IngaDead_Dialogue);
-        //}
+        if (NPC_StateManager.instance.GetNPCState("Inga") == false)
+        {
+            StartDialogue(IngaDead_Dialogue);
+        }
         //else if (NPC_StateManager.instance.GetNPCState("Alma") == false)
         //{
         //    StartDialogue(AlmaDead_Dialogue);
         //}
-        //else
-        //{
+        else
+        {
             StartDialogue(firstDialogue);  // Automatically start the first dialogue
-        //}
+        }
         
     }
 
@@ -55,8 +52,6 @@ public class DialogueManager : MonoBehaviour
         {
             dialogueHistory.Push(currentDialogue);
         }
-
-        //typewrittingEffect.dialogueText.text = " ";
         
         currentDialogue = newDialogue;
         
@@ -65,8 +60,6 @@ public class DialogueManager : MonoBehaviour
 
     void DisplayDialogue()
     {
-        //speakerText.text = speakerName;
-
         typewrittingEffect.writer = currentDialogue.dialogueText;
         typewrittingEffect.StartCoroutine("TypeWriterText");
 
@@ -146,6 +139,8 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("Dialogue ended.");
         PlayerInputs.instance.dialogueManager = null;
+        instance.currentDialogue = null;
+        typewrittingEffect.dialogueText.text = string.Empty;
 
         mainCanvas.SetActive(false);
         Cursor.lockState = CursorLockMode.Locked;
