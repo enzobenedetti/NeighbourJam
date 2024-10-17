@@ -97,190 +97,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: END_0
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 1916
-        width: 215
-        height: 306
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce65bacc08216064094f757a8c3b8702
-      internalID: -79797788
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: END_1
-      rect:
-        serializedVersion: 2
-        x: 479
-        y: 1916
-        width: 2575
-        height: 306
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7e28ab30a1d79a249b04c9bb3c822751
-      internalID: 486205767
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: END_2
-      rect:
-        serializedVersion: 2
-        x: 3054
-        y: 1916
-        width: 257
-        height: 306
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fd10ac1d83e3994a84c6cdf78d814b1
-      internalID: 2057750259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: END_3
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 684
-        width: 215
-        height: 1232
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d97f673543586264bb1d3169df3a865f
-      internalID: -1774705833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: END_4
       rect:
         serializedVersion: 2
-        x: 479
-        y: 678
-        width: 2577
-        height: 1238
+        x: 267
+        y: 286
+        width: 3047
+        height: 1936
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 203, y: 347, z: 226, w: 275}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 0e3254b5dac32074c8300427b8c4e7a3
       internalID: 999657514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: END_5
-      rect:
-        serializedVersion: 2
-        x: 3054
-        y: 681
-        width: 257
-        height: 1235
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91186b208c6583d4697ed46a38eaf24a
-      internalID: -2140341072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: END_6
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 283
-        width: 215
-        height: 401
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39ca346ba8e45a24f9e82e7179df79b5
-      internalID: 384991513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: END_7
-      rect:
-        serializedVersion: 2
-        x: 476
-        y: 280
-        width: 2575
-        height: 401
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2510a7a1b3a0614f9908e4e935e76f4
-      internalID: 1526715249
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: END_8
-      rect:
-        serializedVersion: 2
-        x: 3054
-        y: 280
-        width: 257
-        height: 401
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97b797edd5b3c6c408538da63939a9df
-      internalID: -1757237589
       vertices: []
       indices: 
       edges: []
