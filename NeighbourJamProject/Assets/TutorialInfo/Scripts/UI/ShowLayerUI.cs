@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class ShowLayerUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     //public GameObject normal;  // The first GameObject (Image or UI element)
-    public GameObject RatonBrillo, RatonTexto, RatonBrilloTexto;  // The second GameObject (Image or UI element)
+    public GameObject RatonBrillo, RatonTexto;//, RatonBrilloTexto;  // The second GameObject (Image or UI element)
 
     // Method triggered when the mouse pointer enters the UI element
     public void OnPointerEnter(PointerEventData eventData)
@@ -15,7 +15,7 @@ public class ShowLayerUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         //normal.SetActive(false);
         RatonBrillo.SetActive(true);
         RatonTexto.SetActive(true);
-        RatonBrilloTexto.SetActive(true);
+        //RatonBrilloTexto.SetActive(true);
     }
 
     // Method triggered when the mouse pointer exits the UI element
@@ -25,6 +25,6 @@ public class ShowLayerUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
         //normal.SetActive(true);
         RatonBrillo.SetActive(false);
         RatonTexto.SetActive(false);
-        RatonBrilloTexto.SetActive(false);
+        //RatonBrilloTexto.SetActive(false);
     }
 }
