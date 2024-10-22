@@ -9,6 +9,9 @@ public class ButtonFunctionsManager : MonoBehaviour
     [SerializeField] private TypewrittingEffect typewrittingEffect;
     private DialogueManager dialogueManager;
 
+    [SerializeField] GameObject mainCanvas;
+    [SerializeField] GameObject creditCanvas;
+
     public void Skip()
     {
         typewrittingEffect.ForceComplete();
@@ -29,15 +32,17 @@ public class ButtonFunctionsManager : MonoBehaviour
         Application.Quit();
     }
 
-    private void Update()
+    public void Credits()
     {
-        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 0)
+        if (!creditCanvas.activeSelf)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
-            {
-                Play();
-            }
+            creditCanvas.SetActive(true);
+            mainCanvas.SetActive(false);
+        }
+        else
+        {
+            creditCanvas.SetActive(false);
+            mainCanvas.SetActive(true);
         }
     }
-
 }

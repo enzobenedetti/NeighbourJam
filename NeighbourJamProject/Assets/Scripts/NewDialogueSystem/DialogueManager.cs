@@ -24,6 +24,9 @@ public class DialogueManager : MonoBehaviour
 
     public Transform burnSpawnPoint;
 
+    public bool activeSkip;
+    public GameObject skipButton;
+
     private void Awake()
     {
         instance = this;
@@ -48,6 +51,11 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue newDialogue)
     {
+        if (!activeSkip)
+        {
+            skipButton.SetActive(false);
+        }
+
         if(currentDialogue != null)
         {
             dialogueHistory.Push(currentDialogue);
@@ -70,6 +78,10 @@ public class DialogueManager : MonoBehaviour
             {
                 choiceButtons[i].SetActive(true);
                 choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentDialogue.choices[i].choiceText;
+                //if(choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>().text == "\x22Talk\x22")
+                //{
+                //    choiceButtons[i].GetComponent<Image>().color = new #F39B9B
+                //}
                 int choiceIndex = i; // Capture the index for the lambda
                 choiceButtons[i].GetComponent<Button>().onClick.RemoveAllListeners();
                 choiceButtons[i].GetComponent<Button>().onClick.AddListener(() => OnChoiceSelected(choiceIndex));
