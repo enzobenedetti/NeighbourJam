@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: InitialDialog
   m_EditorClassIdentifier: 
   dialogueText: Looks like this is Alma's apartment. I wonder if he's inside.
+  speakerName: Roswald
   choices:
   - choiceText: Knock the door.
     nextDialogue: {fileID: 11400000, guid: 0a777846dc94f59449b3e79ece134df9, type: 2}
@@ -21,3 +22,4 @@ MonoBehaviour:
     nextDialogue: {fileID: 11400000, guid: dbd245e2dcedcf847b79fdaeed309598, type: 2}
     consequenceID: 0
   burn: {fileID: 0}
+  popUp: {fileID: 0}

@@ -12,7 +12,13 @@ public enum State
 public class StateOfGame : MonoBehaviour
 {
     public State currentState;
+    public static StateOfGame instace;
     // Start is called before the first frame update
+
+    private void Awake()
+    {
+        instace = this;
+    }
     void Start()
     {
         //Debug.Log("\x22Talk\x22");

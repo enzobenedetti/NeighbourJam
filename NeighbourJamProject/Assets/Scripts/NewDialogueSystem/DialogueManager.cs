@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] private Dialogue currentDialogue;
     public TypewrittingEffect typewrittingEffect;
+    public TextMeshProUGUI speakerText;
 
     public Dialogue firstDialogue;  // Assign the first dialogue ScriptableObject in the Inspector
 
@@ -23,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     public Dialogue AlmaDead_Dialogue;
 
     public Transform burnSpawnPoint;
+    public Transform popUpSpawnPoint;
 
     public bool activeSkip;
     public GameObject skipButton;
@@ -30,6 +32,10 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        if(firstDialogue.speakerName == "Roswald")
+        {
+            StartDialogue(firstDialogue);
+        }
     }
 
     public void StartDialogue()
@@ -68,6 +74,7 @@ public class DialogueManager : MonoBehaviour
 
     void DisplayDialogue()
     {
+        speakerText.text = currentDialogue.speakerName;
         typewrittingEffect.writer = currentDialogue.dialogueText;
         typewrittingEffect.StartCoroutine("TypeWriterText");
 
@@ -138,11 +145,18 @@ public class DialogueManager : MonoBehaviour
         switch (consequenceID)
         {
             case 0:
+                if(currentDialogue.popUp != null && currentDialogue.popUp.activeSelf)
+                {
+                    currentDialogue.popUp.SetActive(false);
+                }
                 break;
             case 1:
                 Debug.Log("Inga killed");
                 Instantiate(currentDialogue.burn, burnSpawnPoint.position, burnSpawnPoint.rotation, burnSpawnPoint);
                 NPC_StateManager.instance.SetNPCState("Inga", false);
+                break;
+            case 2:
+                Instantiate(currentDialogue.popUp, popUpSpawnPoint.position, popUpSpawnPoint.rotation, popUpSpawnPoint);
                 break;
         }
     }

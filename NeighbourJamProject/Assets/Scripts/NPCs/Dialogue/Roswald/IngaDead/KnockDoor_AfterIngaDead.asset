@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: The guards are coming! You can not escape, beast! You're going to
     pay for your crimes!
+  speakerName: Roswald
   choices: []
+  burn: {fileID: 0}
+  popUp: {fileID: 0}

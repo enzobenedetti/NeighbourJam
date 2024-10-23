@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: SpyDoor_Normal
   m_EditorClassIdentifier: 
   dialogueText: 
+  speakerName: Roswald
   choices: []
   burn: {fileID: 0}
+  popUp: {fileID: 0}

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "I knew that I shouldn\u2019t have rented out to one of those beasts.
     This is what happens when you give a chance to a monster..."
+  speakerName: Roswald
   choices: []
+  burn: {fileID: 0}
+  popUp: {fileID: 0}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  dialogueText: '"Cozy bedroom in the middle of Pobrenia capital. Only a few minutes
+    from the market and townsquare, spectacular views to public executions and all
+    kinds of events. 500 gold coins plus 3 months deposit."'
+  speakerName: Roswald
+  choices:
+  - choiceText: Continue
+    nextDialogue: {fileID: 11400000, guid: 2c59fb91c00a0e342b8ec92a3325c52a, type: 2}
+    consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}

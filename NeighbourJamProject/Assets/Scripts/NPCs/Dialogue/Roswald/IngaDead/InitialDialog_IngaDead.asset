@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: Shit...this is Roswald's apartment...I'm going to get kicked out
     for sure...
+  speakerName: Roswald
   choices:
   - choiceText: Knock the door.
     nextDialogue: {fileID: 11400000, guid: 6fe7211cdd482ad4a97390edf75be877, type: 2}
@@ -22,3 +23,4 @@ MonoBehaviour:
     nextDialogue: {fileID: 11400000, guid: c4b39e6659a78314c9c68ed101b12fae, type: 2}
     consequenceID: 0
   burn: {fileID: 0}
+  popUp: {fileID: 0}

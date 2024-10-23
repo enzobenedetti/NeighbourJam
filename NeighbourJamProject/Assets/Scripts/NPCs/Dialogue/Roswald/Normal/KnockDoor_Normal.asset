@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: KnockDoor_Normal
   m_EditorClassIdentifier: 
   dialogueText: 
+  speakerName: Roswald
   choices: []
   burn: {fileID: 0}
+  popUp: {fileID: 0}

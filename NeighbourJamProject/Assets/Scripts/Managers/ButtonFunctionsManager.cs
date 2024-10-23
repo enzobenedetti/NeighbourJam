@@ -7,6 +7,7 @@ public class ButtonFunctionsManager : MonoBehaviour
     public PlayerInputs playerInputs;
 
     [SerializeField] private TypewrittingEffect typewrittingEffect;
+    [SerializeField] private TypewrittingEffect typewrittingEffectIntro;
     private DialogueManager dialogueManager;
 
     [SerializeField] GameObject mainCanvas;
@@ -14,6 +15,10 @@ public class ButtonFunctionsManager : MonoBehaviour
 
     public void Skip()
     {
+        if(StateOfGame.instace.currentState == State.Intro)
+        {
+            typewrittingEffectIntro.ForceComplete();
+        }
         typewrittingEffect.ForceComplete();
     }
 
@@ -37,7 +42,7 @@ public class ButtonFunctionsManager : MonoBehaviour
         if (!creditCanvas.activeSelf)
         {
             creditCanvas.SetActive(true);
-            mainCanvas.SetActive(false);
+            mainCanvas.SetActive(false);    
         }
         else
         {

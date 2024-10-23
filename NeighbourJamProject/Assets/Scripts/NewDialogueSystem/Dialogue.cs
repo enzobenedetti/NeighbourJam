@@ -6,10 +6,13 @@ public class Dialogue : ScriptableObject
 {
     [TextArea(3, 10)]
     public string dialogueText;
+    public string speakerName;
 
     public List<DialogueChoice> choices;
 
     public ParticleSystem burn;
+
+    public GameObject popUp;
 }
 
 [System.Serializable]
