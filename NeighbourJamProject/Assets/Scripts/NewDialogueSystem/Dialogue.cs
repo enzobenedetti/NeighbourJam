@@ -13,6 +13,8 @@ public class Dialogue : ScriptableObject
     public ParticleSystem burn;
 
     public GameObject popUp;
+
+    public bool isPlayer;
 }
 
 [System.Serializable]

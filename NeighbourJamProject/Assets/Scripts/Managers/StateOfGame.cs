@@ -15,7 +15,7 @@ public class StateOfGame : MonoBehaviour
     public State currentState;
     public static StateOfGame instace;
 
-    public GameObject appartment, player, camHolder, cam;
+    public GameObject introCanvas, appartment, player, camHolder, cam;
 
     private void Awake()
     {
@@ -31,6 +31,8 @@ public class StateOfGame : MonoBehaviour
     {
         if(currentState == State.Game)
         {
+            introCanvas.SetActive(false);
+
             appartment.SetActive(true);
 
             player.SetActive(true);

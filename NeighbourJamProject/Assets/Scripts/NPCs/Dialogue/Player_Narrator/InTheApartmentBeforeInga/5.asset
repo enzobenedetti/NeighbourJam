@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   dialogueText: Press the "T" key.
+  speakerName: Player
   choices: []
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0

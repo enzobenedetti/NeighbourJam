@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "Where did I put that To-Do list..? Maybe I can find it by pressing
     \u201CEscape\u201D..."
+  speakerName: Player
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: d134877d610a7c046959ac9e8c3344ac, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0

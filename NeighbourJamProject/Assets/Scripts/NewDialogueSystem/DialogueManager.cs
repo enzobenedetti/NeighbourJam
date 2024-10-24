@@ -29,12 +29,30 @@ public class DialogueManager : MonoBehaviour
     public bool activeSkip;
     public GameObject skipButton;
 
+    public GameObject title;
+    public bool done;
+
     private void Awake()
     {
         instance = this;
         if(firstDialogue.speakerName == "Roswald")
         {
             StartDialogue(firstDialogue);
+        }
+    }
+
+    private void Update()
+    {
+        if (firstDialogue.isPlayer && !done)
+        {
+            title.SetActive(false);
+            mainCanvas.SetActive(true);
+            StartDialogue(firstDialogue);
+            done = true;
+        }
+        else if (!firstDialogue.isPlayer)
+        {
+            title.SetActive(true);
         }
     }
 
@@ -87,10 +105,10 @@ public class DialogueManager : MonoBehaviour
             {
                 choiceButtons[i].SetActive(true);
                 choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentDialogue.choices[i].choiceText;
-                //if(choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>().text == "\x22Talk\x22")
-                //{
-                //    choiceButtons[i].GetComponent<Image>().color = new #F39B9B
-                //}
+                if(choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>().text == "\x22Talk\x22")
+                {
+                    choiceButtons[i].GetComponent<Image>().color = new Color(243, 155, 155); //#F39B9B
+                }
                 int choiceIndex = i; // Capture the index for the lambda
                 choiceButtons[i].GetComponent<Button>().onClick.RemoveAllListeners();
                 choiceButtons[i].GetComponent<Button>().onClick.AddListener(() => OnChoiceSelected(choiceIndex));

@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "Ok, now! Well, first things first: Let\u2019s make this gloomy bedroom
     a cozy bedroom... I only have a few boxes, so it should be fast."
+  speakerName: Player
   choices:
   - choiceText: Go to the boxes
     nextDialogue: {fileID: 11400000, guid: b26a8b402ada39549bb698803eb4dcc0, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0

@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   dialogueText: Guess I have a lot of work to do...
+  speakerName: Player
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: 50984237ee3980843b89106ada46a35a, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0

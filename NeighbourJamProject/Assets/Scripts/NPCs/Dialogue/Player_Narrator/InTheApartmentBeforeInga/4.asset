@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   dialogueText: Oh! It must be in the other hand...
+  speakerName: Player
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: c63382ff71184dd48bd199eaf9b457a7, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0

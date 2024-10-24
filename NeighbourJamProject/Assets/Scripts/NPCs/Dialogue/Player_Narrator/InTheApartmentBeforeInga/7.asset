@@ -16,7 +16,11 @@ MonoBehaviour:
 
     *Knock
     knock*'
+  speakerName: Player
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: a413d13ceee854d4fa6c4b534a0a55f3, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0

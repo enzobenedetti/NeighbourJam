@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "I'm not in the mood for company, but if I don't answer, I don\u2019t
     think they are going to stop knocking."
+  speakerName: Player
   choices: []
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0

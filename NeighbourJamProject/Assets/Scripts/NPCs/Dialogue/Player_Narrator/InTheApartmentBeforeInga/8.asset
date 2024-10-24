@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: 8
   m_EditorClassIdentifier: 
   dialogueText: Who could that be? I just got here...
+  speakerName: Player
   choices: []
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
