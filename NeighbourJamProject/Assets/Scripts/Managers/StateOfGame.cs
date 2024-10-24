@@ -6,6 +6,7 @@ public enum State
 {
     Intro,
     Game,
+    Dialogue,
     Pause
 }
 
@@ -13,7 +14,8 @@ public class StateOfGame : MonoBehaviour
 {
     public State currentState;
     public static StateOfGame instace;
-    // Start is called before the first frame update
+
+    public GameObject appartment, player, camHolder, cam;
 
     private void Awake()
     {
@@ -27,6 +29,17 @@ public class StateOfGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(currentState == State.Game)
+        {
+            appartment.SetActive(true);
+
+            player.SetActive(true);
+            player.GetComponent<PlayerMovement>().enabled = true;
+            player.GetComponent<PlayerInputs>().enabled = true;
+
+            camHolder.GetComponent<MoveCamera>().enabled = true;
+
+            cam.GetComponent<PlayerCam>().enabled = true;
+        }
     }
 }

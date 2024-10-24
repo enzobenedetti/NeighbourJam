@@ -17,6 +17,6 @@ MonoBehaviour:
   choices:
   - choiceText: Go to your room
     nextDialogue: {fileID: 0}
-    consequenceID: 0
+    consequenceID: 3
   burn: {fileID: 0}
   popUp: {fileID: 0}

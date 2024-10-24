@@ -40,6 +40,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        StateOfGame.instace.currentState = State.Dialogue;
+
         if (NPC_StateManager.instance.GetNPCState("Inga") == false)
         {
             StartDialogue(IngaDead_Dialogue);
@@ -68,7 +70,7 @@ public class DialogueManager : MonoBehaviour
         }
         
         currentDialogue = newDialogue;
-        
+
         DisplayDialogue();
     }
 
@@ -158,6 +160,9 @@ public class DialogueManager : MonoBehaviour
             case 2:
                 Instantiate(currentDialogue.popUp, popUpSpawnPoint.position, popUpSpawnPoint.rotation, popUpSpawnPoint);
                 break;
+            case 3:
+                StateOfGame.instace.currentState = State.Game;
+                break;
         }
     }
 
@@ -174,6 +179,8 @@ public class DialogueManager : MonoBehaviour
 
         dialogueHistory.Clear();
         choiceHistory.Clear();
+
+        StateOfGame.instace.currentState = State.Game;
         // Implement what happens after dialogue ends
     }
 }
