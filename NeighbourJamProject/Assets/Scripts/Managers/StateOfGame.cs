@@ -5,6 +5,7 @@ using UnityEngine;
 public enum State
 {
     Intro,
+    Tutorial,
     Game,
     Dialogue,
     Pause
@@ -15,7 +16,7 @@ public class StateOfGame : MonoBehaviour
     public State currentState;
     public static StateOfGame instace;
 
-    public GameObject introCanvas, appartment, player, camHolder, cam;
+    public GameObject introCanvas, appartment, player, camHolder, cam, npcParent;
 
     private void Awake()
     {
@@ -29,7 +30,7 @@ public class StateOfGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentState == State.Game)
+        if(currentState == State.Game || currentState == State.Tutorial)
         {
             introCanvas.SetActive(false);
 
@@ -42,6 +43,8 @@ public class StateOfGame : MonoBehaviour
             camHolder.GetComponent<MoveCamera>().enabled = true;
 
             cam.GetComponent<PlayerCam>().enabled = true;
+
+            npcParent.SetActive(true);
         }
     }
 }

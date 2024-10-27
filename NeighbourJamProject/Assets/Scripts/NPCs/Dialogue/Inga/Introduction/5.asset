@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: Oh! I can be such an airhead, I almost forgot! I brought a present
     for you, to welcome you to your new home!
+  speakerName: Inga
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: cb1beb348d3d52344b0aae23c630416f, type: 2}
@@ -21,7 +22,11 @@ MonoBehaviour:
   - choiceText: Close the door
     nextDialogue: {fileID: 11400000, guid: 0c14838352e79c54b87e529256562784, type: 2}
     consequenceID: 0
-  - choiceText: '"Talk" (WARNING: Are you sure?)'
+  - choiceText: '"Talk"'
     nextDialogue: {fileID: 11400000, guid: fd09d971d566f1d4fb314472a9a48d30, type: 2}
     consequenceID: 1
   burn: {fileID: 5287549602294242284, guid: 585ce8aedf62ed54ca369eae4c056fa2, type: 3}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

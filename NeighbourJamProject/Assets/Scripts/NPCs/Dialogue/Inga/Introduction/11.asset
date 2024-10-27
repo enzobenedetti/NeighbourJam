@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 11
   m_EditorClassIdentifier: 
   dialogueText: 
+  speakerName: Inga
   choices:
   - choiceText: 
     nextDialogue: {fileID: 0}
@@ -20,7 +21,11 @@ MonoBehaviour:
   - choiceText: 
     nextDialogue: {fileID: 11400000, guid: 3552c63e4af51514f8c21c8c10b9ccd5, type: 2}
     consequenceID: 0
-  - choiceText: '"Talk" (WARNING: Are you sure?)'
+  - choiceText: '"Talk"'
     nextDialogue: {fileID: 11400000, guid: fd09d971d566f1d4fb314472a9a48d30, type: 2}
     consequenceID: 1
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

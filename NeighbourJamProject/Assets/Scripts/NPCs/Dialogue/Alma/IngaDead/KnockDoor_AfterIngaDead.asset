@@ -13,8 +13,13 @@ MonoBehaviour:
   m_Name: KnockDoor_AfterIngaDead
   m_EditorClassIdentifier: 
   dialogueText: Don't bother, I'm not going to open the door.
+  speakerName: Alma
   choices:
   - choiceText: Leave
     nextDialogue: {fileID: 0}
     consequenceID: 0
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

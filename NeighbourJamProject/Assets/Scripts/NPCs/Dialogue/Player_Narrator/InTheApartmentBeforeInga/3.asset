@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   dialogueText: Press the "Escape" key
-  speakerName: Player
-  choices:
-  - choiceText: end
-    nextDialogue: {fileID: 0}
-    consequenceID: 0
+  speakerName: 
+  choices: []
   burn: {fileID: 0}
   popUp: {fileID: 0}
-  isPlayer: 0
+  isPlayer: 1
+  keyCode: 27
+  afterInputDialogue: {fileID: 11400000, guid: 5ee90f27e404b62438348b5db6266d14, type: 2}

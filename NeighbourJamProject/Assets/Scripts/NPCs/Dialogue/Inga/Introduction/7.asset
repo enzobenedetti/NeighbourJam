@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: This is from my village's farm. I know what it means to be far away
     from your family. Maybe this will help you feel a bit better.
+  speakerName: Inga
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: 8f1e21c90c1cdb34d8301f4cf79449bd, type: 2}
@@ -21,7 +22,11 @@ MonoBehaviour:
   - choiceText: Close the door
     nextDialogue: {fileID: 11400000, guid: 69364b9bb3981504fa01ffa2dc645ce4, type: 2}
     consequenceID: 0
-  - choiceText: '"Talk" (WARNING: Are you sure?)'
+  - choiceText: '"Talk"'
     nextDialogue: {fileID: 11400000, guid: fd09d971d566f1d4fb314472a9a48d30, type: 2}
     consequenceID: 1
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

@@ -5,11 +5,15 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    [Header("Instance")]
     public DialogueManager instance;
 
+    [Header("Dialogue UI")]
     public GameObject mainCanvas;
     public GameObject[] choiceButtons; // UI buttons for choices
+    public Color killColor;
 
+    [Header("Dialogues")]
     [SerializeField] private Dialogue currentDialogue;
     public TypewrittingEffect typewrittingEffect;
     public TextMeshProUGUI speakerText;
@@ -23,14 +27,31 @@ public class DialogueManager : MonoBehaviour
     public Dialogue IngaDead_Dialogue;
     public Dialogue AlmaDead_Dialogue;
 
+    [Header("Spawnpoints")]
     public Transform burnSpawnPoint;
     public Transform popUpSpawnPoint;
 
+    [Header("For Skip")]
     public bool activeSkip;
     public GameObject skipButton;
 
+    [Header("Show Name")]
     public GameObject title;
     public bool done;
+
+    [Header("Intro Bool")]
+    public bool isIntro;
+
+    [Header("Tutorial Only Stuff")]
+    public GameObject tutorialCanvas;
+    public Dialogue tutoDialogue;
+
+    [Header("Alma Stuff")]
+    public GameObject boxes;
+    public GameObject gossip;
+    public GameObject sprite;
+    public Animator anim;
+    public Dialogue secondFirstDialogue, haveToy, noToy;
 
     private void Awake()
     {
@@ -43,16 +64,25 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if (firstDialogue.isPlayer && !done)
+        if (tutoDialogue.isPlayer && !done)
         {
-            title.SetActive(false);
             mainCanvas.SetActive(true);
-            StartDialogue(firstDialogue);
+            StartDialogue(tutoDialogue);
             done = true;
         }
-        else if (!firstDialogue.isPlayer)
+
+        if(currentDialogue != null && currentDialogue.keyCode != KeyCode.None)
         {
-            title.SetActive(true);
+            if (Input.GetKeyDown(currentDialogue.keyCode) && !tutorialCanvas.activeSelf)
+            {
+                tutorialCanvas.SetActive(true);
+            }
+            else if(Input.GetKeyDown(currentDialogue.keyCode) && tutorialCanvas.activeSelf)
+            {
+                Debug.Log("a");
+                tutorialCanvas.SetActive(false);
+                StartDialogue(currentDialogue.afterInputDialogue);
+            }
         }
     }
 
@@ -64,10 +94,10 @@ public class DialogueManager : MonoBehaviour
         {
             StartDialogue(IngaDead_Dialogue);
         }
-        //else if (NPC_StateManager.instance.GetNPCState("Alma") == false)
-        //{
-        //    StartDialogue(AlmaDead_Dialogue);
-        //}
+        else if (NPC_StateManager.instance.GetNPCState("Alma") == false)
+        {
+            StartDialogue(AlmaDead_Dialogue);
+        }
         else
         {
             StartDialogue(firstDialogue);  // Automatically start the first dialogue
@@ -94,6 +124,24 @@ public class DialogueManager : MonoBehaviour
 
     void DisplayDialogue()
     {
+        if(!currentDialogue.isPlayer)
+        {
+            title.SetActive(true);
+        }
+        else
+        {
+            title.SetActive(false);
+        }
+
+        if (PlayerInputs.instance.dialogueManager.activeSkip)
+        {
+            skipButton.SetActive(true);
+        }
+        else
+        {
+            skipButton.SetActive(false);
+        }
+
         speakerText.text = currentDialogue.speakerName;
         typewrittingEffect.writer = currentDialogue.dialogueText;
         typewrittingEffect.StartCoroutine("TypeWriterText");
@@ -107,7 +155,11 @@ public class DialogueManager : MonoBehaviour
                 choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>().text = currentDialogue.choices[i].choiceText;
                 if(choiceButtons[i].GetComponentInChildren<TextMeshProUGUI>().text == "\x22Talk\x22")
                 {
-                    choiceButtons[i].GetComponent<Image>().color = new Color(243, 155, 155); //#F39B9B
+                    choiceButtons[i].GetComponent<Image>().color = killColor;
+                }
+                else
+                {
+                    choiceButtons[i].GetComponent<Image>().color = Color.white;
                 }
                 int choiceIndex = i; // Capture the index for the lambda
                 choiceButtons[i].GetComponent<Button>().onClick.RemoveAllListeners();
@@ -127,19 +179,22 @@ public class DialogueManager : MonoBehaviour
 
         DialogueChoice selectedChoice = currentDialogue.choices[choiceIndex];
         HandleConsequences(selectedChoice.consequenceID);
-
-        if (selectedChoice.nextDialogue != null)
+        if(selectedChoice.consequenceID != 7)
         {
-            if (typewrittingEffect.isWritting)
+            if (selectedChoice.nextDialogue != null)
             {
-                typewrittingEffect.StopCoroutine("TypeWriterText");
+                if (typewrittingEffect.isWritting)
+                {
+                    typewrittingEffect.StopCoroutine("TypeWriterText");
+                }
+                StartDialogue(selectedChoice.nextDialogue);
             }
-            StartDialogue(selectedChoice.nextDialogue);
+            else
+            {
+                EndDialogue();
+            }
         }
-        else
-        {
-            EndDialogue();
-        }
+        
     }
 
     public void GoBack()
@@ -179,15 +234,56 @@ public class DialogueManager : MonoBehaviour
                 Instantiate(currentDialogue.popUp, popUpSpawnPoint.position, popUpSpawnPoint.rotation, popUpSpawnPoint);
                 break;
             case 3:
-                StateOfGame.instace.currentState = State.Game;
+                Destroy(GetComponent<AlmaIntroduction>());
+                break;
+            case 4:
+                Debug.Log("Alma killed");
+                Instantiate(currentDialogue.burn, burnSpawnPoint.position, burnSpawnPoint.rotation, burnSpawnPoint);
+                NPC_StateManager.instance.SetNPCState("Alma", false);
+                break;
+            case 5:
+                Destroy(this.gameObject);
+                break;
+            case 6:
+                this.gameObject.tag = "Alma";
+                this.firstDialogue = secondFirstDialogue;
+                Destroy(this.GetComponent<AlmaIntroduction>());
+                break;
+            case 7:
+                if (boxes != null)
+                {
+                    StartDialogue(noToy);
+                }
+                else
+                {
+                    StartDialogue(haveToy);
+                }
+                break;
+            case 8:
+                anim.Play("Open");
+                gossip.SetActive(false);
+                sprite.SetActive(true);
+                //currentDialogue.gossip.SetActive(false);
+                //currentDialogue.spriteWithBG.SetActive(true);
+                break;
+            case 9:
+                anim.Play("Close");
+                gossip.SetActive(false);
+                sprite.SetActive(true);
+                //currentDialogue.gossip.SetActive(true);
+                //currentDialogue.spriteWithBG.SetActive(false);
                 break;
         }
     }
 
     void EndDialogue()
     {
-        Debug.Log("Dialogue ended.");
-        PlayerInputs.instance.dialogueManager = null;
+        if(PlayerInputs.instance != null)
+        {
+            if (PlayerInputs.instance.dialogueManager != null)
+                PlayerInputs.instance.dialogueManager = null;
+        }
+
         instance.currentDialogue = null;
         typewrittingEffect.dialogueText.text = string.Empty;
 
@@ -198,7 +294,19 @@ public class DialogueManager : MonoBehaviour
         dialogueHistory.Clear();
         choiceHistory.Clear();
 
-        StateOfGame.instace.currentState = State.Game;
+        if (isIntro)
+        {
+            StateOfGame.instace.currentState = State.Tutorial;
+        }
+        else
+        {
+            StateOfGame.instace.currentState = State.Game;
+        }
+
+        if(GetComponent<IngaIntroduction>() != null)
+        {
+            Destroy(this.gameObject);
+        }
         // Implement what happens after dialogue ends
     }
 }

@@ -18,6 +18,7 @@ public class PlayerInputs : MonoBehaviour
     {
         instance = this;
         PM = GetComponent<PlayerMovement>();
+        dialogueManager = GetComponent<DialogueManager>();
     }
 
     void Update()

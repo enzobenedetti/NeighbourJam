@@ -12,9 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
   m_Name: KnockDoor_Normal
   m_EditorClassIdentifier: 
-  dialogueText: Nobody responded
+  dialogueText: I'm busy, I will be available later.
+  speakerName: Alma
   choices:
-  - choiceText: End
-    nextDialogue: {fileID: 0}
-    consequenceID: 0
+  - choiceText: Continue
+    nextDialogue: {fileID: 11400000, guid: 4508e6250d1f25a46a93c2ad59cf42c1, type: 2}
+    consequenceID: 8
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}
+  openAnim: {fileID: 0}
+  closeAnim: {fileID: 0}
+  gossip: {fileID: 0}
+  spriteWithBG: {fileID: 0}

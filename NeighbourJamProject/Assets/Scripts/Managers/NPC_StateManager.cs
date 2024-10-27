@@ -33,7 +33,7 @@ public class NPC_StateManager : MonoBehaviour
 
         if (GetNPCState("Alma") == false && PlayerInputs.instance.dialogueManager == null)
         {
-            Destroy(Inga);
+            Destroy(Alma);
         }
     }
 

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   dialogueText: "Oy! Don\u2019t think we\u2019ve met yet?"
+  speakerName: ???
   choices:
   - choiceText: Who are you?
     nextDialogue: {fileID: 11400000, guid: dc28ba182ad4b594e89853ea536a54a3, type: 2}
@@ -23,3 +24,8 @@ MonoBehaviour:
   - choiceText: Kick out politely
     nextDialogue: {fileID: 11400000, guid: d505bd8a83e64d64f8a2a9c1d0bb83a7, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

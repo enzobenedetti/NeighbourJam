@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: 2_1
   m_EditorClassIdentifier: 
   dialogueText: Haha! You're such a joker! Don't be mean!
+  speakerName: Inga
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: 5002839c80ded8c46a073be1cd95ed0a, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

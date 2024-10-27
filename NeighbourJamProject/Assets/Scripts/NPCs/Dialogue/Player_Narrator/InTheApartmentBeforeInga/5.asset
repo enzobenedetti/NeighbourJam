@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   dialogueText: Press the "T" key.
-  speakerName: Player
+  speakerName: 
   choices: []
   burn: {fileID: 0}
   popUp: {fileID: 0}
-  isPlayer: 0
+  isPlayer: 1
+  keyCode: 116
+  afterInputDialogue: {fileID: 11400000, guid: a1ff744b647f98546993e3d7a9362ca9, type: 2}

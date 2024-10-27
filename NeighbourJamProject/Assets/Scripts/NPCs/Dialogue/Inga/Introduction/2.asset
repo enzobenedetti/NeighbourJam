@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "Woaaah! Don\u2019t see many of your species \u2018round here! We're
     all misunderstood, you know!"
+  speakerName: Inga
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: 7ae347a26bdb9344e9deb811bc0d9a37, type: 2}
@@ -24,3 +25,8 @@ MonoBehaviour:
   - choiceText: Kick out politely
     nextDialogue: {fileID: 11400000, guid: 29bb0bd2a4dab5a49bc8f1f7658bd7ac, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

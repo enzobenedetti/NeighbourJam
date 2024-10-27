@@ -14,8 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "I don\u2019t understand how this could happen, it doesn't make any
     sense."
+  speakerName: Alma
   choices:
   - choiceText: Leave
     nextDialogue: {fileID: 0}
     consequenceID: 0
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

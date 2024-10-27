@@ -15,6 +15,7 @@ MonoBehaviour:
   dialogueText: "Both of our races have a reputation for being a bloodthirsty people
     who don\u2019t care to \"talk\" over their problems, but you seem nice. You and
     me are going to be friends, I just know it!"
+  speakerName: Inga
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: 295095686b3f3664fb85697e62755aed, type: 2}
@@ -22,7 +23,11 @@ MonoBehaviour:
   - choiceText: Close the door
     nextDialogue: {fileID: 11400000, guid: ef5c6c1849d39f84aaeaebeb40a2e072, type: 2}
     consequenceID: 0
-  - choiceText: '"Talk" (WARNING: Are you sure?)'
+  - choiceText: '"Talk"'
     nextDialogue: {fileID: 11400000, guid: fd09d971d566f1d4fb314472a9a48d30, type: 2}
     consequenceID: 1
   burn: {fileID: 5287549602294242284, guid: 585ce8aedf62ed54ca369eae4c056fa2, type: 3}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

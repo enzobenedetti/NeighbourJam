@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
+  m_Name: HaveToy 2
+  m_EditorClassIdentifier: 
+  dialogueText: .....
+  speakerName: Alma
+  choices:
+  - choiceText: Continue
+    nextDialogue: {fileID: 11400000, guid: ca682293ff3f03342b2d4dc1ef579b57, type: 2}
+    consequenceID: 0
+  - choiceText: '"Talk"'
+    nextDialogue: {fileID: 11400000, guid: 163fe0224280f3042a0236047492ff9e, type: 2}
+    consequenceID: 4
+  burn: {fileID: 5287549602294242284, guid: 585ce8aedf62ed54ca369eae4c056fa2, type: 3}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

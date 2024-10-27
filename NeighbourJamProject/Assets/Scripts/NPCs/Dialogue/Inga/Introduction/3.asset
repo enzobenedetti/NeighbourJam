@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: I know how it feels when someone only judges you by your appearance,
     without knowing a thing about you even... It's very hard.
+  speakerName: Inga
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: 2e47af25301bd1746ba97c7f9332a465, type: 2}
@@ -24,3 +25,8 @@ MonoBehaviour:
   - choiceText: Kick out politely
     nextDialogue: {fileID: 11400000, guid: ea6168aeccee1ac4f94366475ea91a3d, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

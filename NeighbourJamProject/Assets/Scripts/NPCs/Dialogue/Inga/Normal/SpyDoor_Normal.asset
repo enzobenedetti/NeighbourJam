@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
   m_Name: SpyDoor_Normal
   m_EditorClassIdentifier: 
-  dialogueText: 
-  choices: []
+  dialogueText: 1, 2, 1, 2... Strong heart means a strong body! YEAH!
+  speakerName: Inga
+  choices:
+  - choiceText: Keep hearing
+    nextDialogue: {fileID: 11400000, guid: e3a8235619826af4dbbd009702fa5559, type: 2}
+    consequenceID: 0
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

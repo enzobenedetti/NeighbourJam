@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: InitialDialog_IngaDead
   m_EditorClassIdentifier: 
   dialogueText: Shit...I killed someone...what will this person think about me?
+  speakerName: 
   choices:
   - choiceText: Knock the door.
     nextDialogue: {fileID: 11400000, guid: 2b67dd537e097744aafaa01e72fb161b, type: 2}
     consequenceID: 0
-  - choiceText: Try to hear what's happening inside
+  - choiceText: Spy
     nextDialogue: {fileID: 11400000, guid: c40797568f685bc4189c29e3df8321df, type: 2}
     consequenceID: 0
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 1
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: InitialDialog
   m_EditorClassIdentifier: 
   dialogueText: Looks like this is Alma's apartment. I wonder if he's inside.
+  speakerName: 
   choices:
   - choiceText: Knock the door.
     nextDialogue: {fileID: 11400000, guid: ca1c61654691b5a419fc518498432464, type: 2}
     consequenceID: 0
-  - choiceText: Try to hear what's happening inside
+  - choiceText: Spy
     nextDialogue: {fileID: 11400000, guid: 3dbd2304b2799724cb6921f6afe51000, type: 2}
     consequenceID: 0
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 1
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

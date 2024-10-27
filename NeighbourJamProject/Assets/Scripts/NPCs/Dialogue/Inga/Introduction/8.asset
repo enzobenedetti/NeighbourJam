@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: "It's so late, I almost skip my training! As you know, a healthy
     mind comes from a healthy body!\r"
+  speakerName: Inga
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: bce34f92762e5294c85a17f454da14d5, type: 2}
@@ -21,7 +22,11 @@ MonoBehaviour:
   - choiceText: Close the door
     nextDialogue: {fileID: 11400000, guid: 0b49cb9625a078348995d52df2206a8d, type: 2}
     consequenceID: 0
-  - choiceText: '"Talk" (WARNING: Are you sure?)'
+  - choiceText: '"Talk"'
     nextDialogue: {fileID: 11400000, guid: fd09d971d566f1d4fb314472a9a48d30, type: 2}
     consequenceID: 1
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

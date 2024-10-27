@@ -16,6 +16,7 @@ public class CircularInteractable_NPC : MonoBehaviour
     //Interaction stuff
     public GameObject mainCanvas;
 
+    public Dialogue firstDialogue;
     void Update()
     {
         // Calculate the distance on the XZ plane (ignore Y)
@@ -24,39 +25,43 @@ public class CircularInteractable_NPC : MonoBehaviour
         float distance = offset.magnitude;
 
         // Check if the player is within the radius
-
-        if(distance <= near1_Radius && distance > interactionRadius)
+        if(gossip != null)
         {
-            gossip.SetActive(true);
-            near1.SetActive(true);
-            near2_interact.SetActive(false);
-        }
-        else if (distance <= interactionRadius)
-        {
-            near1.SetActive(false);
-            near2_interact.SetActive(true);
-
-            if (Input.GetKeyDown(KeyCode.E))
+            if (distance <= near1_Radius && distance > interactionRadius)
             {
-                Interact();
+                gossip.SetActive(true);
+                near1.SetActive(true);
+                near2_interact.SetActive(false);
             }
-        }
-        else
-        {
-            gossip.SetActive(false);
-            near2_interact.SetActive(false);
-            near1.SetActive(false);
+            else if (distance <= interactionRadius)
+            {
+                near1.SetActive(false);
+                near2_interact.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    Interact();
+                }
+            }
+            else
+            {
+                gossip.SetActive(false);
+                near2_interact.SetActive(false);
+                near1.SetActive(false);
+            }
         }
     }
 
-    void Interact()
+    public void Interact()
     {
         Debug.Log("Interaction performed!");
         // Add your interaction logic here
 
-
+        //GetComponent<DialogueManager>().firstDialogue = firstDialogue;
         PlayerInputs.instance.dialogueManager = GetComponent<DialogueManager>();
         mainCanvas.SetActive(true);
         PlayerInputs.instance.Dialogue();
+
+        
     }
 }

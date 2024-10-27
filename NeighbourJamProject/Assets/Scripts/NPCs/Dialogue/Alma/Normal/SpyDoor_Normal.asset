@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
   m_Name: SpyDoor_Normal
   m_EditorClassIdentifier: 
-  dialogueText: Looks like he's busy.
+  dialogueText: Yes, for sure, I understand, sorry for the inconvenience... (I hate
+    this shitty job)
+  speakerName: ???
   choices:
-  - choiceText: Leave
-    nextDialogue: {fileID: 0}
+  - choiceText: Keep hearing
+    nextDialogue: {fileID: 11400000, guid: 707b43ed65d043c4999f3e69de45f862, type: 2}
     consequenceID: 0
   burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}

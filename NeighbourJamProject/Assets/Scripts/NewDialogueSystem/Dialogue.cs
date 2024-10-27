@@ -15,6 +15,12 @@ public class Dialogue : ScriptableObject
     public GameObject popUp;
 
     public bool isPlayer;
+
+    public KeyCode keyCode;
+    public Dialogue afterInputDialogue;
+
+    public GameObject gossip;
+    public GameObject spriteWithBG;
 }
 
 [System.Serializable]

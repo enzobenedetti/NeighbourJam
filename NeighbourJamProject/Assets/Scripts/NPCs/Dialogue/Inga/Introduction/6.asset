@@ -13,7 +13,13 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   dialogueText: You have received a milk bottle
+  speakerName: Inga
   choices:
   - choiceText: Continue
     nextDialogue: {fileID: 11400000, guid: 509a3ed8f820afa4e8c87db49d161fec, type: 2}
     consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
+  isPlayer: 0
+  keyCode: 0
+  afterInputDialogue: {fileID: 0}
