@@ -18,19 +18,39 @@ public class ButtomOptions : MonoBehaviour
     }
     //
     //
+<<<<<<< Updated upstream
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
     
     public void IntroScene()
+=======
+    public void NavMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void NavIntroScene()
+>>>>>>> Stashed changes
     {
         SceneManager.LoadScene("IntroScene");
     }
 
+<<<<<<< Updated upstream
     public void CreditsScene()
     {
         SceneManager.LoadScene("CreditsScene"); 
+=======
+    public void NavMainGame()
+    {
+        SceneManager.LoadScene("MainScene");
+    }
+
+    public void NavCreditsScene()
+    {
+        SceneManager.LoadScene("CreditsScene");
+>>>>>>> Stashed changes
     }
 
     public void QuitGame()
