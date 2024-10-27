@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  dialogueText: I know how it feels when someone only judges you by your appearance,
+    without knowing a thing about you even... It's very hard.
+  choices:
+  - choiceText: Continue
+    nextDialogue: {fileID: 11400000, guid: 2e47af25301bd1746ba97c7f9332a465, type: 2}
+    consequenceID: 0
+  - choiceText: Close the door
+    nextDialogue: {fileID: 11400000, guid: ea6168aeccee1ac4f94366475ea91a3d, type: 2}
+    consequenceID: 0
+  - choiceText: Kick out politely
+    nextDialogue: {fileID: 11400000, guid: ea6168aeccee1ac4f94366475ea91a3d, type: 2}
+    consequenceID: 0

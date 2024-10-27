@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed4292ce72d51304cb5ab6cc3d0ec695, type: 3}
+  m_Name: 3
+  m_EditorClassIdentifier: 
+  dialogueText: "However, such a good offer isn't cheap. If you would please, procure
+    the 3 months deposit plus the first month\u2019s rent, we can continue."
+  speakerName: Roswald
+  choices:
+  - choiceText: Give
+    nextDialogue: {fileID: 11400000, guid: 4e6d36e37c6257c4c9f19ffae9f5265d, type: 2}
+    consequenceID: 0
+  burn: {fileID: 0}
+  popUp: {fileID: 0}
