@@ -19,6 +19,7 @@ public class ButtomOptions : MonoBehaviour
     //
     //
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
@@ -26,22 +27,30 @@ public class ButtomOptions : MonoBehaviour
     
     public void IntroScene()
 =======
+=======
+>>>>>>> Stashed changes
     public void NavMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
 
     public void NavIntroScene()
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     {
         SceneManager.LoadScene("IntroScene");
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public void CreditsScene()
     {
         SceneManager.LoadScene("CreditsScene"); 
 =======
+=======
+>>>>>>> Stashed changes
     public void NavMainGame()
     {
         SceneManager.LoadScene("MainScene");
@@ -50,6 +59,9 @@ public class ButtomOptions : MonoBehaviour
     public void NavCreditsScene()
     {
         SceneManager.LoadScene("CreditsScene");
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
 
